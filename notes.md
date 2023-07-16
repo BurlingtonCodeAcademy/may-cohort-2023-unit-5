@@ -75,3 +75,24 @@ app.use(express.json());
   - Dependency
     - ```npm i cors``` | ```npm install cors```
     - import within ```app.js``` | ```index.js``` **above** ```routes```.
+
+# Cookies
+- Data
+  - set by the web server
+  - stored by web client (browser)
+  - sent back to server on **every** request
+
+## Uses
+- Tracking over a time span (through browser)
+- stroing data w/o allocating server space
+- early version of **localStorage** for storing objects on client.
+
+## Limitations
+- not secure
+- not very large
+- clients can restrict
+  - users can erase them at any time.
+  - browser settings can erase them after sessions. 
+
+## Cookie-Parser Dependency
+- ```npm i cookie-parser```

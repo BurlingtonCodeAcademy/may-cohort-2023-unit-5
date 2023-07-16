@@ -1,0 +1,12 @@
+- spin up an express application (server).
+- dependecy 
+    - express - DONE
+- gitignore file
+    - add node_modules - DONE 
+- set our main file to an app.js - DONE
+
+--------------
+- establish base connections
+    - require ??? 
+    - PORT ???
+- listen on said PORT - logging that it's connected.
