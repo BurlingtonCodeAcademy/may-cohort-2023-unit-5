@@ -10,7 +10,7 @@ router.post('/register', (req, res) => {
             firstName, lastName, email, password
         } = req.body;
         
-        console.log(potato)
+        // console.log(potato)
 
         res.status(200).send(`
             <h1>Hello, ${firstName} ${lastName}</h1>
@@ -22,6 +22,32 @@ router.post('/register', (req, res) => {
         )
     }
 
+})
+
+router.get('/query/', (req, res) => {
+    /* 
+        - Anything after the endpoint can be extracted from it.
+        ex: /todo/query/?first="John"
+    */
+    // console.log(req.query);
+    try {
+        
+        const { first, last, email } = req.query;
+
+        res.status(200).json({
+            status: 'Profile Page',
+            results: {
+                fullName: `${first} ${last}`,
+                email: email
+            }
+        })
+
+    } catch (err) {
+        res.status(500).json({
+            results: 'Rejected',
+            error: err.message
+        })
+    }
 })
 
 module.exports = router;

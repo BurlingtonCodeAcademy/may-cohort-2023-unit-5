@@ -65,3 +65,13 @@ app.use(express.json());
   - request (req)
   - response (res)
   - next
+
+## CORS
+- Cross Origin Resource Sharing
+  - preflight
+    - Checks to see if your request is available
+    - If headers don't match in our request, it can throw an error
+    - Adding this dependency is to help resolve any of those issues.
+  - Dependency
+    - ```npm i cors``` | ```npm install cors```
+    - import within ```app.js``` | ```index.js``` **above** ```routes```.
