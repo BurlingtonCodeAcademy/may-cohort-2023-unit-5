@@ -1,17 +1,16 @@
 {
-  "name": "cookies",
+  "name": "02_cookies_v2",
   "version": "1.0.0",
-  "description": "cookie lesson",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ejw",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2"
-  },
-  "devDependencies": {},
-  "keywords": []
+  }
 }
